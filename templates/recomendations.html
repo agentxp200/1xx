@@ -1,0 +1,141 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+           
+            background-image: url("{% static 'images/3409297.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            /* background-color: #123e7c; */
+           
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(16 13 53 / 67%);
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .results-container {
+            width: 50%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color:rgba(80, 107, 179, 0.2);
+            /* background-color: #3498db; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .result {
+            margin-bottom: 6px;
+            padding: 1px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            /* background-color: #f9f9f9; */
+        }
+
+        .result h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .result p {
+            color:#ddd;
+            font-size: 16px;
+        }
+
+        .result a {
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+
+        .result a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center><h1>Search Results</h1></center>
+        <B><H3><a href="/home"> Home</a></H3></B>
+    </header>
+
+    <div class="results-container">
+        <div class="result">
+            <h2><a href="#">Site Name</a></h2>
+            <p>{{sitename}}</p>
+        </div>
+
+        <div class="result">
+            <h2><a href="#">Description</a></h2>
+            <p>{{description}}</p>
+        </div>
+
+        <div class="result">
+            <h2><a href="#">Bounce Rate</a></h2>
+            <p> <b>{{bouncestatus}}</b></p>
+        </div>
+
+        <div class="result">
+            <h2><a href="#">Visit Status</a></h2>
+            <p><b>{{visitstatus}}</b> </p>
+        </div>
+
+        <div class="result">
+            <h2><a href="#">Speed </a></h2>
+            <p> <b>{{timestatus}}</b></p>
+        </div>
+
+        <div class="result">
+            <h2><a href="#">Rank </a></h2>
+            <p> <b>{{rankstatus}}</b></p>
+        </div>
+        <div class="result">
+            <h2><a href="#">Phishing Status </a></h2>
+            <p> <b>{{phishstatus}}</b></p>
+        </div>
+        <div class="result">
+            <h2><a href="#">Malware Status </a></h2>
+            <p> <b>{{malstatus}}</b></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
